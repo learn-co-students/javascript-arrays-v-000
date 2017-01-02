@@ -23,3 +23,10 @@ var anotherarray = [1];
 anotherarray = [...anotherarray, "foo"];
 return anotherarray;
 }
+
+function accessElementInArray(array, index) {
+var aarray = [1, 2, 3];
+var element = aarray[index];
+accessElementInArray(aarray, 2);
+return element;
+}
