@@ -7,9 +7,9 @@ return mynewarray;
 }
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-var myarray = [1];
-myarray = ["foo", ...myarray];
-return myarray;
+var onearray = [1];
+onearray = ["foo", ...onearray];
+return onearray;
 }
 
 function addElementToEndOfArray(array, element) {
@@ -26,7 +26,17 @@ return anotherarray;
 
 function accessElementInArray(array, index) {
 var aarray = [1, 2, 3];
-var element = aarray[index];
-accessElementInArray(aarray, 2);
-return element;
+return aarray[index];
+}
+
+function removeElementFromBeginningOfArray(array) {
+  var samplearray = [1, 2, 3];
+  samplearray.shift();
+  return samplearray;
+}
+
+function removeElementFromEndOfArray(array) {
+  var asamplearray = [1, 2, 3];
+  asamplearray.splice(-1);
+  return asamplearray;
 }
