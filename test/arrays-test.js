@@ -16,7 +16,9 @@ describe('arrays', () => {
     })
   })
 
+  // it's takes 2 arguments 
   describe('addElementToBeginningOfArray(array, element)', () => {
+    // array.add element 2 to the beginig
     it('adds an `element` to the beginning of an `array`', () => {
       expect(addElementToBeginningOfArray([1], 'foo')).to.eql(['foo', 1])
     })
@@ -26,6 +28,7 @@ describe('arrays', () => {
 
       addElementToBeginningOfArray(array, 'foo')
 
+      // i expecet array to eq original array 
       expect(array).to.eql(array)
     })
   })
@@ -61,7 +64,7 @@ describe('arrays', () => {
   describe('destructivelyAddElementToEndOfArray(array, element)', () => {
     it('adds an `element` to the end of an `array`', () => {
       expect(destructivelyAddElementToEndOfArray([1], 'foo')).to.eql([1, 'foo'])
-    })
+    }) 
 
     it('alters `array`', () => {
       const array = [1]
